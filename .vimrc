@@ -29,6 +29,12 @@ highlight Search ctermbg=blue ctermfg=lightgrey
 " Set leader to space
 let mapleader = " "
 
+# Use the following line to install vim-plug
+# curl -fLo ~/.vim/autoload/plug.vim --create-dirs     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# 
+# Install Exuberant ctags
+# sudo apt-get install -y exuberant-ctags
+	
 call plug#begin('~/.vim/plugged')
   Plug 'preservim/nerdtree', { 'on':  'NERDTreeToggle' }
   Plug 'itchyny/lightline.vim'

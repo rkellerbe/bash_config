@@ -15,6 +15,13 @@ bind -m vi-insert "\C-l.":clear-screen
 bind -m vi-insert "\C-a.":beginning-of-line
 bind -m vi-insert "\C-e.":end-of-line
 bind -m vi-insert "\C-w.":backward-kill-word
+alias hicpu='ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head'
+alias himem='ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head'
+alias l.='exa -d .*'
+alias la='exa -la'
+alias ll='exa -l'
+alias ls='exa'
+alias vi='vim'
 
 shopt -s histverify
 
