@@ -17,6 +17,7 @@ bind -m vi-insert "\C-e.":end-of-line
 bind -m vi-insert "\C-w.":backward-kill-word
 alias hicpu='ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head'
 alias himem='ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head'
+# Install exa manually using `` https://the.exa.website/install/linux#manual ``
 alias l.='exa -d .*'
 alias la='exa -la'
 alias ll='exa -l'
@@ -24,6 +25,7 @@ alias ls='exa'
 alias vi='vim'
 
 shopt -s histverify
+shopt -s autocd
 
 # get current branch in git repo
 function parse_git_branch() {
