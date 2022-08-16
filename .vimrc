@@ -22,7 +22,7 @@ set wildmenu
 
 filetype off
 
-set colorcolumn=80
+set colorcolumn=120
 highlight ColorColumn ctermbg=blue guibg=lightgrey
 highlight Search ctermbg=blue ctermfg=lightgrey
 
