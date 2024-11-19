@@ -17,11 +17,11 @@ bind -m vi-insert "\C-e.":end-of-line
 bind -m vi-insert "\C-w.":backward-kill-word
 alias hicpu='ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%cpu | head'
 alias himem='ps -eo pid,ppid,cmd,%mem,%cpu --sort=-%mem | head'
-# Install exa manually using `` https://the.exa.website/install/linux#manual ``
-alias l.='exa -d .*'
-alias la='exa -la'
-alias ll='exa -l'
-alias ls='exa'
+# Install eza using `` sudo apt install eza``
+alias l.='eza -d .*'
+alias la='eza -la'
+alias ll='eza -l'
+alias ls='eza'
 alias vi='vim'
 
 shopt -s histverify
